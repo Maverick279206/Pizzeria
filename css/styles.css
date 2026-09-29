@@ -71,9 +71,32 @@ figcaption {
 .gridofertas {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "oferta1"
+        "oferta2"
+        "oferta3"
+        "oferta4"
+    ;
     gap: 1rem;
     padding: 5px;
 
+}
+
+.oferta1 {
+    grid-area: oferta1;
+}
+
+.oferta2 {
+    grid-area: oferta2;
+}
+
+.oferta3 {
+    grid-area: oferta3;
+}
+
+.oferta4 {
+    grid-area: oferta4;
 }
 
 .gridnuestrolocal {
@@ -306,7 +329,7 @@ figcaption {
 /* Medias Querris */
 
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
     .gridnuestrolocal {
         display: grid;
         grid-template-columns: 1fr 1fr;
