@@ -209,7 +209,9 @@ figcaption {
 /* Paleta de colores */
 
 
-
+.navborder {
+    background-color: #BA1650;
+}
 
 .colorprincipal {
     color: #BA1650;
@@ -293,6 +295,16 @@ figcaption {
     height: 200px;
     object-fit: cover;
 }
+
+.img-carousel {
+    height: 450px;
+    /* Ajustá esta altura según lo que necesite tu diseño */
+    object-fit: cover;
+    /* Recorta los bordes sobrantes sin aplastar ni deformar la foto */
+    object-position: center;
+    /* Centra el encuadre de la imagen */
+}
+
 
 /* Pseudoclases */
 .hov:hover {
