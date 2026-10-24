@@ -1,0 +1,8 @@
+@mixin backimg ($url, $padding: 2rem 1rem) {
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: $padding;
+}

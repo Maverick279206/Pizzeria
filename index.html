@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Pizzeria Dellizzias | Inicio</title>
 
 </head>
@@ -14,17 +14,35 @@
 <body class="fondocomun">
     <header>
 
-        <nav class="fondoinicio dflex ">
-            <ul class="fonts semibold sizemin viñeta dflex justieb alignc ">
-                <li><a href="index.html"> <img src="./assets/logopizzeria.jpg" alt="logo pizzeria" class="logo"> </a>
-                </li>
-                <li><a class="colorsecundario hov" href="index.html">inicio</a></li>
-                <li><a class="colorsecundario hov" href="pages/carta.html">carta</a></li>
-                <li><a class="colorsecundario hov" href="pages/contacto.html">contacto</a></li>
-                <li><a class="colorsecundario hov" href="pages/nuestrahistoria.html">nuestrahistoria</a></li>
-                <li><a class="colorsecundario marr hov" href="pages/ofertas.html">Ofertas</a></li>
-            </ul>
-
+        <nav class="navbar navbar-expand-lg navborder fontp extrabold">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/logopizzeria.jpg" alt="logo pizzeria" class="logo">
+                    Pizzeria Dellizzias</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nuestrahistoria.html">Nuestra Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/ofertas.html">Ofertas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
 
@@ -37,6 +55,42 @@
     </header>
 
     <main>
+        <div id="carouselStackedIndicators" class="carousel slide marp">
+            <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                    <img src="./assets/carrusel1.jfif" class="d-block w-100 img-carousel" alt="pizzeria">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carrusel2.jfif" class="d-block w-100 img-carousel" alt="pizza">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carrusel3.jfif" class="d-block w-100 img-carousel" alt="empanadas">
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+
         <section class="dflexc  gap1 marup">
             <h2 class="fontp colorprincipal bold sizemedium dflex justic">Nosotros</h2>
             <p class="fonts colorsecundario semibold sizemin">Somos una empresa familiar en pleno auge.
