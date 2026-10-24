@@ -1,0 +1,110 @@
+@media (max-width: 900px) {
+    .gridnuestrolocal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+    }
+}
+
+@media (min-width:1024px) {
+    .dflex {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .dflexc {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .gap1 {
+        gap: 16px;
+    }
+
+    .gridofertas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        padding: 10px;
+
+    }
+
+    .gridnuestrolocal {
+        display: grid;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "foto1 foto2"
+            "foto3 foto4"
+        ;
+    }
+
+    .sizebig {
+        font-size: 4rem;
+    }
+
+    .sizemedium {
+        font-size: 3rem;
+    }
+
+    .sizesmall {
+        font-size: 2rem;
+    }
+
+    .sizemin {
+        font-size: 1.5rem;
+    }
+
+    .imgadj {
+        width: 100%;
+        height: auto;
+    }
+
+    .imglocal {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .mesaconmenu {
+        padding: 3.5rem;
+
+    }
+
+
+    .fondoempanadas {
+        padding: 3.5rem;
+    }
+
+    .logo {
+        width: 95px;
+        height: auto;
+    }
+
+    /* altos */
+
+
+    .hei1 {
+        height: 16px;
+    }
+
+    /* Margenes 1024px */
+
+    .marp {
+        margin: 35px;
+    }
+
+    .marup {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}

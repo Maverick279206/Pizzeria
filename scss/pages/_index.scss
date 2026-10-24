@@ -1,0 +1,29 @@
+.gridnuestrolocal {
+    display: grid;
+    padding: 5px;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+    ;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}

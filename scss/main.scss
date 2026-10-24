@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import "utilities/variables";
+@import "utilities/mixins-extends";
+@import "base/general";
+@import "base/reset";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";
+@import "pages/ofertas";
+@import "pages/nuestrahistoria";
+@import "pages/contacto";
+@import "pages/carta";
+@import "mediaquerrie";
