@@ -18,12 +18,28 @@
     background-color: $rojo;
 }
 
+// Fondos
+.fondocomun {
+    background-color: #CCCCCC;
+}
 
+.fondoinicio {
+    background-color: #ff98bb;
+}
+
+.fondocuadro {
+    background-color: $rosa;
+    border-color: $rojo;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.fondoimg {
+    border-color: $rojo
+}
 
 // Pseudoclases
-.hov:hover {
-    color: aqua;
-}
+
 
 .vis:visited {
     color: #BA1650;
@@ -39,15 +55,29 @@
 }
 
 .imglocal {
+    display: block;
     width: 100%;
-    height: 200px;
+    height: 100px;
     object-fit: cover;
+    border-color: $gris;
+    border-width: 5px;
+    border-style: solid;
 }
 
 .img-carousel {
     height: 450px;
     object-fit: cover;
     object-position: center;
+    object-fit: cover;
+    border-color: $gris;
+    border-width: 5px;
+    border-style: solid;
+
+}
+
+.logo {
+    width: 70px;
+    height: auto;
 }
 
 /* Borrado de viñetas */
@@ -56,6 +86,8 @@
 
 .viñeta {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 
@@ -87,16 +119,16 @@
 
 
 .marp {
-    margin: 15px;
+    margin: 5px;
 }
 
 .marup {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .marr {
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 

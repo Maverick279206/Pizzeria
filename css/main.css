@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.hov:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  display: inline-flex;
+  transform-origin: left center;
+  align-items: center;
+}
 
 .colorprincipal {
   color: #BA1650;
@@ -21,10 +28,23 @@
   background-color: #BA1650;
 }
 
+.fondocomun {
+  background-color: #CCCCCC;
+}
 
+.fondoinicio {
+  background-color: #ff98bb;
+}
 
-.hov:hover {
-  color: aqua;
+.fondocuadro {
+  background-color: #ff98bb;
+  border-color: #BA1650;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.fondoimg {
+  border-color: #BA1650;
 }
 
 .vis:visited {
@@ -38,20 +58,35 @@
 }
 
 .imglocal {
+  display: block;
   width: 100%;
-  height: 200px;
+  height: 100px;
   object-fit: cover;
+  border-color: #424242;
+  border-width: 5px;
+  border-style: solid;
 }
 
 .img-carousel {
   height: 450px;
   object-fit: cover;
   object-position: center;
+  object-fit: cover;
+  border-color: #424242;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
 }
 
 /* Borrado de viñetas */
 .viñeta {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Tamaño fuentes */
@@ -77,16 +112,16 @@
 }
 
 .marp {
-  margin: 15px;
+  margin: 5px;
 }
 
 .marup {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .marr {
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 /* Anchos */
@@ -176,6 +211,13 @@
 
 figcaption {
   display: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  line-height: 0;
 }
 
 .gridnuestrolocal {
@@ -207,13 +249,31 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  padding: 5px;
+  align-items: start;
 }
 
 .bodyofertasadj {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+.mesaconmenu {
+  background-image: url("../assets/fondomenu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.fondoempanadas {
+  background-image: url("../assets/empanadas.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 2rem 1rem;
 }
 
 @media (max-width: 900px) {
@@ -224,32 +284,27 @@ figcaption {
     grid-template-areas: "foto1" "foto2" "foto3" "foto4";
   }
 }
-
 @media (min-width: 1024px) {
   .dflex {
     display: flex;
     width: 100%;
     padding: 10px;
   }
-
   .dflexc {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 10px;
   }
-
   .gap1 {
     gap: 16px;
   }
-
   .gridofertas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
     padding: 10px;
   }
-
   .gridnuestrolocal {
     display: grid;
     padding: 10px;
@@ -257,57 +312,45 @@ figcaption {
     grid-template-rows: auto auto;
     grid-template-areas: "foto1 foto2" "foto3 foto4";
   }
-
   .sizebig {
     font-size: 4rem;
   }
-
   .sizemedium {
     font-size: 3rem;
   }
-
   .sizesmall {
     font-size: 2rem;
   }
-
   .sizemin {
     font-size: 1.5rem;
   }
-
   .imgadj {
     width: 100%;
     height: auto;
   }
-
   .imglocal {
     width: 100%;
     height: 250px;
     object-fit: cover;
   }
-
   .mesaconmenu {
     padding: 3.5rem;
   }
-
   .fondoempanadas {
     padding: 3.5rem;
   }
-
   .logo {
     width: 95px;
     height: auto;
   }
-
   /* altos */
   .hei1 {
     height: 16px;
   }
-
   /* Margenes 1024px */
   .marp {
     margin: 35px;
   }
-
   .marup {
     margin-top: 35px;
     margin-bottom: 35px;

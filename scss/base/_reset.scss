@@ -8,4 +8,11 @@
 
 figcaption {
     display: none;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+    line-height: 0;
 }

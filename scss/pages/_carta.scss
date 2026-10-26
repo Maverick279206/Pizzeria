@@ -1,7 +1,7 @@
-%mesaconmenu {
-    @include backimg("../assets/mesaconmenu.jpg", 2rem 1rem)
+.mesaconmenu {
+    @include backimg("../assets/fondomenu.jpg", 2rem 1rem)
 }
 
-%fondoempanadas {
+.fondoempanadas {
     @include backimg("../assets/empanadas.jfif", 2rem 1rem);
 }

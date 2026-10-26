@@ -13,10 +13,10 @@
 <body class="fondocomun bodyofertasadj">
     <header>
 
-        <nav class="navbar navbar-expand-lg navborder fontp extrabold">
+        <nav class="navbar navborder fontp extrabold">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../assets/logopizzeria.jpg" alt="logo pizzeria"
-                        class="logo">
+                <a class="navbar-brand hov" href="../index.html"><img src="../assets/logopizzeria.jpg"
+                        alt="logo pizzeria" class="logo">
                     Pizzeria Dellizzias</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
                     aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,19 +25,19 @@
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active hov" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="carta.html">Carta</a>
+                            <a class="nav-link hov" href="carta.html">Carta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link hov" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nuestrahistoria.html">Nuestra Historia</a>
+                            <a class="nav-link hov" href="nuestrahistoria.html">Nuestra Historia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ofertas.html">Ofertas</a>
+                            <a class="nav-link hov" href="ofertas.html">Ofertas</a>
                         </li>
                     </ul>
                 </div>
@@ -52,47 +52,49 @@
 
     <main>
         <section>
-            <h2 class="fontp colorprincipal bold sizemedium dflex justic">Nuestras Promos</h2>
+            <h2 class="fontp colorprincipal bold sizemedium dflex justic ">Nuestras Promos</h2>
             <div class="gridofertas">
-                <article class="oferta1">
+                <article class="oferta1 fondocuadro">
                     <h3 class="fontp colorcuarto semibold sizesmall">Promo familiar</h3>
                     <p class="fonts colorsecundario minibold sizemin">Muzzarella + Napolitana</p>
                     <figure>
-                        <img src="../assets/muzza.jfif" alt="Pizza Muzzarela" class="imglocal">
-                        <img src="../assets/pizzadepalmitos.jfif" alt="Pizza Palmito" class="imglocal marup">
+                        <img src="../assets/muzza.jfif" alt="Pizza Muzzarela" class="imglocal marup">
+                        <img src="../assets/pizzadepalmitos.jfif" alt="Pizza Palmito" class="imglocal ">
                         <figcaption>Promocion 1</figcaption>
                     </figure>
                 </article>
 
-                <article class="oferta2">
+                <article class="oferta2 fondocuadro">
                     <h3 class="fontp colorcuarto semibold sizesmall">Promo Para todos</h3>
                     <p class="fonts colorsecundario minibold sizemin">12 Empanadas + Pizza Muzzarella</p>
                     <figure>
-                        <img src="../assets/empanadas.jfif" alt="Empanadas Varias" class="imglocal">
-                        <img src="../assets/muzza.jfif" alt="Pizza Muzzarella" class="imglocal marup">
+                        <img src="../assets/empanadas.jfif" alt="Empanadas Varias" class="imglocal marup">
+                        <img src="../assets/muzza.jfif" alt="Pizza Muzzarella" class="imglocal">
                         <figcaption>Promocion 2</figcaption>
                     </figure>
                 </article>
-
-                <article class="oferta3">
+            </div>
+            <div class="gridofertas">
+                <article class="oferta3 fondocuadro">
                     <h3 class="fontp colorcuarto semibold sizesmall">Promo Empanadisima</h3>
                     <p class="fonts colorsecundario minibold sizemin">15 Empanadas</p>
                     <figure>
-                        <img src="../assets/empanadas.jfif" alt="Empanadas Varias" class="imglocal">
-                        <img src="../assets/empanadas2.jfif" alt="Empanadas fritas" class="imglocal marup">
+                        <img src="../assets/empanadas.jfif" alt="Empanadas Varias" class="imglocal marup">
+                        <img src="../assets/empanadas2.jfif" alt="Empanadas fritas" class="imglocal">
                         <figcaption>Promocion 3</figcaption>
                     </figure>
                 </article>
 
-                <article class="oferta4">
+                <article class="oferta4 fondocuadro">
                     <h3 class="fontp colorcuarto semibold sizesmall">Promo Deluxe</h3>
                     <p class="fonts colorsecundario minibold sizemin">Napolitana + Atun</p>
                     <figure> <img src="../assets/pizzanapolitana.jfif" alt="Pizza con rodajas de Tomate"
-                            class="imglocal">
-                        <img src="../assets/atun.jfif" alt="Pizza con Atun" class="imglocal marup">
+                            class="imglocal marup">
+                        <img src="../assets/atun.jfif" alt="Pizza con Atun" class="imglocal">
                         <figcaption>Promocion 4</figcaption>
                     </figure>
                 </article>
+            </div>
             </div>
         </section>
     </main>
@@ -113,13 +115,17 @@
         </form>
 
         <nav>
-            <ul class="fonts semibold sizemin viñeta dflexc marup gap1">
-                <li><a class="colorsecundario hov" href="https://www.instagram.com/dellizzias">
+            <ul class="fonts semibold sizemin viñeta dflexc gap1">
+                <li>
+                    <a class="colorsecundario hov" href="https://www.instagram.com/dellizzias"><img
+                            src="../assets/logoig.jfif" alt="logoig" class="logo">
                         instagram
                     </a>
                 </li>
-                <li><a class="colorsecundario hov"
-                        href="https://www.facebook.com/p/Pizzería-Dellizzias-100064050761050/">
+                <li>
+                    <a class="colorsecundario hov"
+                        href="https://www.facebook.com/p/Pizzería-Dellizzias-100064050761050/"><img
+                            src="../assets/logofb.jfif" alt="logofb" class="logo">
                         Facebook</a>
                 </li>
             </ul>
