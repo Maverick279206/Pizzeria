@@ -88,14 +88,71 @@
     <footer>
         <h2 class="fontp colorprincipal bold sizemedium dflex justic">Queres Ser parte de nuestro equipo?</h2>
         <form action="" class="fonts colorsecundario semibold sizemin dflexc marup gap1">
-            <label for="Nombre y apellido">Nombre y Apellido</label>
-            <input type="text" name="" id="Nombre y apellido">
-            <label for="Email">Email</label>
-            <input type="email" name="" id="Email">
-            <label for="Numero">Numero de Telefono</label>
-            <input type="number" name="" id="Numero">
-            <label for="Adjuntar">Adjunta tu Cv</label>
-            <input type="file" name="" id="Adjuntar">
+            <div class="accordion" id="accordionFormulario">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNombre">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseNombre" aria-expanded="true" aria-controls="collapseNombre">
+                            Nombre y Apellido
+                        </button>
+                    </h2>
+                    <div id="collapseNombre" class="accordion-collapse collapse" aria-labelledby="headingNombre"
+                        data-bs-parent="#accordionFormulario">
+                        <div class="accordion-body">
+                            <label for="nombre-apellido" class="form-label visually-hidden">Nombre y Apellido</label>
+                            <input type="text" name="nombre_apellido" id="nombre-apellido" class="form-control"
+                                placeholder="Dylan Soria">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEmail">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEmail" aria-expanded="false" aria-controls="collapseEmail">
+                            Email
+                        </button>
+                    </h2>
+                    <div id="collapseEmail" class="accordion-collapse collapse" aria-labelledby="headingEmail"
+                        data-bs-parent="#accordionFormulario">
+                        <div class="accordion-body">
+                            <label for="email" class="form-label visually-hidden">Email</label>
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="ejemplo@gmail.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTelefono">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTelefono" aria-expanded="false" aria-controls="collapseTelefono">
+                            Número de Teléfono
+                        </button>
+                    </h2>
+                    <div id="collapseTelefono" class="accordion-collapse collapse" aria-labelledby="headingTelefono"
+                        data-bs-parent="#accordionFormulario">
+                        <div class="accordion-body">
+                            <label for="telefono" class="form-label visually-hidden">Número de Teléfono</label>
+                            <input type="tel" name="telefono" id="telefono" class="form-control" placeholder="11515468">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingCv">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseCv" aria-expanded="false" aria-controls="collapseCv">
+                            Adjuntá tu CV
+                        </button>
+                    </h2>
+                    <div id="collapseCv" class="accordion-collapse collapse" aria-labelledby="headingCv"
+                        data-bs-parent="#accordionFormulario">
+                        <div class="accordion-body">
+                            <label for="cv" class="form-label visually-hidden">Adjuntá tu CV</label>
+                            <input type="file" name="cv" id="cv" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn fondoinicio mt-3 ">Enviar postulación</button>
         </form>
 
         <nav>
