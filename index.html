@@ -14,9 +14,9 @@
 <body class="fondocomun">
     <header>
 
-        <nav class="navbar navbar-expand-lg navborder fontp extrabold">
+        <nav class="navbar navborder fontp extrabold">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand hov" href="index.html">
                     <img src="./assets/logopizzeria.jpg" alt="logo pizzeria" class="logo">
                     Pizzeria Dellizzias</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
@@ -26,19 +26,19 @@
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active hov" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/carta.html">Carta</a>
+                            <a class="nav-link hov" href="pages/carta.html">Carta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                            <a class="nav-link hov" href="pages/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/nuestrahistoria.html">Nuestra Historia</a>
+                            <a class="nav-link hov" href="pages/nuestrahistoria.html">Nuestra Historia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/ofertas.html">Ofertas</a>
+                            <a class="nav-link hov" href="pages/ofertas.html">Ofertas</a>
                         </li>
                     </ul>
                 </div>
@@ -56,6 +56,14 @@
 
     <main>
         <div id="carouselStackedIndicators" class="carousel slide marp">
+            <div class="carousel-indicators carousel-dark">
+                <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner rounded-5">
                 <div class="carousel-item active">
                     <img src="./assets/carrusel1.jfif" class="d-block w-100 img-carousel" alt="pizzeria">
@@ -69,24 +77,16 @@
             </div>
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators"
+                    <button class=" btn btn-dark btn-sm" type="button" data-bs-target="#carouselStackedIndicators"
                         data-bs-slide="prev">
-                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators"
+                    <button class=" btn btn-dark btn-sm" type="button" data-bs-target="#carouselStackedIndicators"
                         data-bs-slide="next">
-                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
             </p>
         </section>
         <section>
-            <h2 class="fontp colorprincipal bold sizemedium dflex justic">Nuestro Local</h2>
+            <h2 class="fontp colorprincipal bold sizemedium dflex justic ">Nuestro Local</h2>
             <figure>
                 <div class="gridnuestrolocal">
                     <img src="assets/nuestrolocal1.jfif" alt="Caja" class="imglocal foto1">
@@ -137,13 +137,17 @@
         </form>
 
         <nav>
-            <ul class="fonts semibold sizemin viñeta dflexc marup gap1">
-                <li><a class="colorsecundario hov" href="https://www.instagram.com/dellizzias">
+            <ul class="fonts semibold sizemin viñeta dflexc gap1">
+                <li>
+                    <a class="colorsecundario hov" href="https://www.instagram.com/dellizzias"><img
+                            src="assets/logoig.jfif" alt="logoig" class="logo">
                         instagram
                     </a>
                 </li>
-                <li><a class="colorsecundario hov"
-                        href="https://www.facebook.com/p/Pizzería-Dellizzias-100064050761050/">
+                <li>
+                    <a class="colorsecundario hov"
+                        href="https://www.facebook.com/p/Pizzería-Dellizzias-100064050761050/"><img
+                            src="assets/logofb.jfif" alt="logofb" class="logo">
                         Facebook</a>
                 </li>
             </ul>
