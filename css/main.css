@@ -8,47 +8,78 @@
   align-items: center;
 }
 
+.parallax-banner {
+  /* Ruta a tu imagen de fondo */
+  background-image: url("../assets/parallax2.jfif");
+  /* Propiedades clave del efecto parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Altura de la sección parallax */
+  min-height: 400px;
+}
+.parallax-banner .parallax-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Capa oscura para que el texto sea legible */
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+.parallax-banner .parallax-text {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .colorprincipal {
-  color: #BA1650;
+  color: #D9303E;
 }
 
 .colorsecundario {
-  color: #424242;
+  color: #000000;
 }
 
 .colorter {
-  color: #ff98bb;
+  color: #C19060;
 }
 
 .colorcuarto {
-  color: #176C57;
+  color: #F2EFE9;
 }
 
 .navborder {
-  background-color: #BA1650;
+  background-color: #D9303E;
 }
 
 .fondocomun {
-  background-color: #CCCCCC;
+  background-color: #C19060;
 }
 
 .fondoinicio {
-  background-color: #ff98bb;
+  background-color: #05592A;
 }
 
 .fondocuadro {
-  background-color: #ff98bb;
-  border-color: #BA1650;
+  background-color: #05592A;
+  border-color: #D9303E;
   border-width: 5px;
   border-style: solid;
 }
 
 .fondoimg {
-  border-color: #BA1650;
+  border-color: #D9303E;
+}
+
+.fondorojo {
+  background-color: #D9303E;
+  border-color: #000000;
+  border-width: 5px;
+  border-style: solid;
 }
 
 .vis:visited {
-  color: #BA1650;
+  color: #D9303E;
 }
 
 /* ajuste de imagenes */
@@ -62,7 +93,7 @@
   width: 100%;
   height: 100px;
   object-fit: cover;
-  border-color: #424242;
+  border-color: #000000;
   border-width: 5px;
   border-style: solid;
 }
@@ -72,7 +103,7 @@
   object-fit: cover;
   object-position: center;
   object-fit: cover;
-  border-color: #424242;
+  border-color: #000000;
   border-width: 5px;
   border-style: solid;
 }
@@ -82,7 +113,11 @@
   height: auto;
 }
 
-/* Borrado de viñetas */
+/* Borrado de viñetas y bloques inline*/
+.btn-solid {
+  display: inline-block;
+}
+
 .viñeta {
   list-style: none;
   padding-left: 0;

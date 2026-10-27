@@ -5,3 +5,31 @@
     transform-origin: left center;
     align-items: center;
 }
+
+.parallax-banner {
+    /* Ruta a tu imagen de fondo */
+    background-image: url('../assets/parallax2.jfif');
+
+    /* Propiedades clave del efecto parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Altura de la sección parallax */
+    min-height: 400px;
+
+    .parallax-content {
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Capa oscura para que el texto sea legible */
+        padding: 20px 40px;
+        border-radius: 8px;
+    }
+
+    .parallax-text {
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 8px;
+        padding: 1.2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
