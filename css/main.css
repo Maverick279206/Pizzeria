@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.img-carousel, .imglocal {
+  border-color: #000000;
+  border-width: 5px;
+  border-style: solid;
+}
+
 .hov:hover {
   transform: scale(1.2);
   transition: 0.5s;
@@ -93,9 +99,6 @@
   width: 100%;
   height: 100px;
   object-fit: cover;
-  border-color: #000000;
-  border-width: 5px;
-  border-style: solid;
 }
 
 .img-carousel {
@@ -103,9 +106,6 @@
   object-fit: cover;
   object-position: center;
   object-fit: cover;
-  border-color: #000000;
-  border-width: 5px;
-  border-style: solid;
 }
 
 .logo {
@@ -318,26 +318,23 @@ figure {
     grid-template-rows: auto auto;
     grid-template-areas: "foto1" "foto2" "foto3" "foto4";
   }
+  .dflex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .imgadj {
+    width: 100%;
+    height: auto;
+  }
+  .imglocal {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
 }
-.dflex {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.imgadj {
-  width: 100%;
-  height: auto;
-}
-
-.imglocal {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-}
-
 @media (min-width: 1024px) {
   .dflex {
     display: flex;

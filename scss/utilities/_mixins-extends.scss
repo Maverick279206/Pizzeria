@@ -6,3 +6,9 @@
     width: 100%;
     padding: $padding;
 }
+
+%fondoextend {
+    border-color: $negro;
+    border-width: 5px;
+    border-style: solid;
+}
